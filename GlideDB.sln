@@ -10,6 +10,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD34CCE6-4175-408C-B52B-0A2A7A8FA8E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{DF9E7CD5-9DE8-46E5-B261-1D6C2524ED3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideDB.Applications.Terminal", "src\Applications\GlideDB.Applications.Terminal\GlideDB.Applications.Terminal.csproj", "{B7BC6744-F8A7-4C90-A15F-3AFAC2D65FCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{C3070DEB-0966-46BB-8F96-3528CF326340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideDB.Host", "src\Host\GlideDB.Host\GlideDB.Host.csproj", "{3ECEC46E-8129-4390-81DF-17E041C07575}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,5 +27,21 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7BC6744-F8A7-4C90-A15F-3AFAC2D65FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7BC6744-F8A7-4C90-A15F-3AFAC2D65FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7BC6744-F8A7-4C90-A15F-3AFAC2D65FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7BC6744-F8A7-4C90-A15F-3AFAC2D65FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECEC46E-8129-4390-81DF-17E041C07575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECEC46E-8129-4390-81DF-17E041C07575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECEC46E-8129-4390-81DF-17E041C07575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECEC46E-8129-4390-81DF-17E041C07575}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF9E7CD5-9DE8-46E5-B261-1D6C2524ED3E} = {BD34CCE6-4175-408C-B52B-0A2A7A8FA8E5}
+		{B7BC6744-F8A7-4C90-A15F-3AFAC2D65FCD} = {DF9E7CD5-9DE8-46E5-B261-1D6C2524ED3E}
+		{C3070DEB-0966-46BB-8F96-3528CF326340} = {BD34CCE6-4175-408C-B52B-0A2A7A8FA8E5}
+		{3ECEC46E-8129-4390-81DF-17E041C07575} = {C3070DEB-0966-46BB-8F96-3528CF326340}
 	EndGlobalSection
 EndGlobal
