@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Host\GlideDB.Host.Abstractions\GlideDB.Host.Abstractions.csproj" />
+    <ProjectReference Include="..\GlideDB.ProcessRunner\GlideDB.ProcessRunner.csproj" />
+  </ItemGroup>
+
+</Project>

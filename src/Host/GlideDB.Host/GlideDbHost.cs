@@ -1,10 +1,13 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using GlideDB.ProcessRunner.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace GlideDB.Host;
 
 public class GlideDbHost
 {
-    private readonly IServiceCollection _serviceCollection = new ServiceCollection();
+    private readonly IServiceCollection _serviceCollection = new ServiceCollection()
+        .AddProcessRunner();
+    
     private IServiceProvider? _serviceProvider;
 
     public void RegisterSingleton<TService>(TService implementationInstance)
